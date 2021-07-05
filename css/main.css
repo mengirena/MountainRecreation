@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #F70058;
+    --clr-dark: #0C0E35;
+    --clr-light: #FFF;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+    --grid: 1fr;
+}
+
+ body {
+     margin: 0;
+     font-family: 'Work Sans', sans-serif;
+     font-size: 1.125rem;
+     color: var(--clr-dark);
+     line-height: 1.6; /*line-height/font-size in figma*/
+     background: gray;
+ }
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+.btn{
+    cursor:pointer;
+    display: inline-block;
+    font-size: 1rem;
+    padding: .5em 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.btn--primary {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+}
+
+.btn--primary:hover {
+    background-color: var(--clr-dark);
+}
+
+ header {
+     background-color: var(--clr-light);
+     text-align: center;
+ }
+
+ .logo {
+    margin-top: 1em;
+ }
+
+ .nav__list {
+     display: flex;
+     justify-content: space-between;
+     margin: 0;
+     padding: 1em;
+     list-style: none;
+     font-size: 0.875rem;
+     text-transform:uppercase;
+     font-weight: var(--fw-bold);
+     letter-spacing: 1px;    
+ }
+
+ .nav_link{
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .weather {
+     display: grid;
+     grid-template-columns: min-content 1fr;
+     background: var(--clr-dark);
+     color: var(--clr-light);
+ }
+
+ .weather__icon {
+     grid-row: span 2; 
+     background-color: var(--clr-primary);
+     padding: .5em;
+     display: flex;    
+ }
+
+ .weather__info {
+     margin: 0;
+     margin-left: .75rem;
+     text-align: left;
+     color: rgba(255, 255, 255, .7);
+     text-transform: uppercase;
+     font-weight: var(--fw-bold);
+     letter-spacing: 1px;
+     font-size: .75rem;
+     display:flex;
+     align-items: center;
+ }
+
+ .weather__info span {
+     color: var(--clr-light);
+     margin-left: auto;
+     margin-right: .75rem;
+     font-size: 1rem;
+     text-transform: none;
+ }
+
+ .weather__info:first-of-type {
+     margin-top: .5rem;
+     margin-bottom:.5rem;
+     position: relative;
+ }
+ 
+ .weather__info:first-of-type::after {
+     content: "";
+     position: absolute;
+     background: var(--clr-light);
+     opacity: .25;
+     height: 2px;
+     width: calc(100% - .75rem);
+     bottom: -.25rem;
+ }
+
+ .weather__info:last-of-type {
+     margin-bottom: .5rem;
+ }
+
+ .main {
+     padding: 3em 1em;
+ }
+
+.main--ski {
+    background-image: url(../images/background.png);
+    background-size: cover;
+}
+
+ .main__title {
+     line-height: 1;
+     font-weight: var(--fw-black);
+     font-size: 3rem;
+ }
