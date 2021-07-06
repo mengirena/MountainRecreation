@@ -35,6 +35,8 @@ h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
+    font-weight: var(--fw-bold);
+    margin-bottom:.75em;
 }
 
 .btn--primary {
@@ -44,6 +46,18 @@ h1, h2, h3 {
 
 .btn--primary:hover {
     background-color: var(--clr-dark);
+}
+
+.btn--outline {
+    outline: 3px solid var(--clr-primary);
+    outline-offset: -3px;
+    color: var(--clr-primary);
+}
+
+.btn--outline:hover {
+    background: var(--clr-primary);
+    outline-color: var(--clr-primary);
+    color: var(--clr-light);
 }
 
  header {
