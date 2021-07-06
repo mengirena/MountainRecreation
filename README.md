@@ -29,7 +29,7 @@ This is a 1 page landing page.
 ```
 * Set general font family, font size, color, line-height, `margin: 0;` under `body`
 1.125rem = 18 px
-Instead of doing 62.5% under `html` tag is because we want to accommodate others' change in their browser
+Instead of doing 62.5% under `html` tag, we want to accommodate others' change in their browser
 
 ### single-colon vs dowble-colon in CSS
 
@@ -37,13 +37,33 @@ Instead of doing 62.5% under `html` tag is because we want to accommodate others
 
 * double-colon selectors are pseudo-elements: used to selecting things that have no HTML element for, such as `::first-letter`
 
-
-
 ### Custom CSS
 
+Define custom CSS with name and value under `:root`: 
 
-Opacity is a integrated property.
-letter spacing 
-line height 
+```css
+:root {
+    --name:value;
+}
+```
 
-who is aligned with who - pull it out
+The two dash lines are necessary before the name.
+
+
+### Other tips
+* Opacity is applied not just the element but also its contents.
+
+* line height
+
+It's better to use the unitless value becasue in this way the line box height will be the multiplication of the number and the element font-size. In the block-level elements, it specifies the minimum height of line boxes. 
+
+* Use outline instead of border to style button to make the button the same size. Outline can be shifted and it won't affect other elements.
+
+* Length unit: (ch) character count
+
+* Negative margin is doable.
+
+* Categorize the alignment of elements
+
+Design:
+https://www.figma.com/file/GwRmx1FJ31evTNq6hpCpCs/Amazing-Mountain?node-id=2%3A9
