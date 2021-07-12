@@ -1,5 +1,3 @@
-
-<img width="574" alt="Screen Shot 2021-07-11 at 9 10 17 PM" src="https://user-images.githubusercontent.com/51871665/125229855-76b7fc00-e28c-11eb-9d36-2b2b2eb74507.png">
 # Amazing Mountain - landing page
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8dd3688a-8f84-4c53-8702-a2cd7fcbe574/deploy-status)](https://mountainrecreation.netlify.app)
